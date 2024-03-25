@@ -19,11 +19,11 @@ export const MoviePoster = ({movie, height = 420, width = 300}: Props) => {
         width,
         height,
         opacity: pressed ? 0.8 : 1,
-        marginHorizontal: 10,
+        marginHorizontal: 4,
         paddingBottom: 20,
-        paddingHorizontal: 10,
+        paddingHorizontal: 7,
       })}>
-      <View style={{...styles.imageContainer, width: 300, height: 400}}>
+      <View style={styles.imageContainer}>
         <Image
           style={styles.image}
           source={{
