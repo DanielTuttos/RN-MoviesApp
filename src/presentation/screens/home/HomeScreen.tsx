@@ -12,7 +12,7 @@ export const HomeScreen = () => {
     return <Text>cargando</Text>;
   }
   return (
-    <ScrollView>
+    <ScrollView showsVerticalScrollIndicator={false}>
       <View style={{marginTop: top + 20, paddingBottom: 30}}>
         {/* principal */}
         <PosterCarousel movies={nowPlaying} />
