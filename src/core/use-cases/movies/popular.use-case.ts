@@ -13,7 +13,6 @@ export const moviesPopularUseCase = async (
   options?: Options,
 ): Promise<Movie[]> => {
   try {
-    console.log('page: ', options?.page)
     const popular = await fetcher.get<MovieDBMoviesResponse>('/popular', {
       params: {
         page: options?.page ?? 1,
